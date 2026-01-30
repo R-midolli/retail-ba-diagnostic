@@ -1,0 +1,20 @@
+[project]
+name = "retail-ba-diagnostic"
+version = "0.1.0"
+description = "Diagnostico de Business Analytics"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.4.4",
+    "numpy>=2.4.1",
+    "pandas>=3.0.0",
+    "plotly>=6.5.2",
+    "pyarrow>=23.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+    "nbformat>=5.10.4",
+]

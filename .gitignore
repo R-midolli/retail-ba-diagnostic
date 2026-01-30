@@ -1,0 +1,82 @@
+# -------------------------------------------------
+# Python / caches
+# -------------------------------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# Tool caches (linters/tests)
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+
+# -------------------------------------------------
+# Virtual environments
+# -------------------------------------------------
+.venv/
+venv/
+ENV/
+
+# -------------------------------------------------
+# Jupyter
+# -------------------------------------------------
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# -------------------------------------------------
+# OS files
+# -------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------------------------------
+# Editors
+# -------------------------------------------------
+.vscode/
+.idea/
+
+# -------------------------------------------------
+# Secrets / env files
+# -------------------------------------------------
+.env
+.env.*
+*.env
+secrets.*
+credentials*.json
+
+# -------------------------------------------------
+# Data (Kaggle raw files)
+# -------------------------------------------------
+data/raw/
+
+# Avoid committing all data by default, keep only selected artifacts
+data/*
+!data/.gitkeep
+!data/processed/
+!data/processed/.gitkeep
+!data/processed/store_kpis.csv
+
+# -------------------------------------------------
+# Local outputs / heavy artifacts
+# -------------------------------------------------
+*.parquet
+*.duckdb
+*.sqlite
+*.pkl
+*.joblib
+*.feather
+*.log
+
+# -------------------------------------------------
+# Scratch / WIP notebooks (do not commit)
+# -------------------------------------------------
+notebooks/_scratch/
+
+# Optional: ignore generated figures if fully reproducible
+# reports/figures/
